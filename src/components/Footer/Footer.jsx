@@ -7,7 +7,7 @@ export const Footer = () => {
     <FooterStyled>
       <FooterContainer>
         <Socials style={{ gap: 45 }} />
-        <Copyright>©2023 “Rent Car”. All rights reserved.</Copyright>
+        <Copyright>©2023 “RENT CAR”. All rights reserved.</Copyright>
       </FooterContainer>
     </FooterStyled>
   );

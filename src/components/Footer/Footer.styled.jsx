@@ -3,10 +3,10 @@ import { MainContainer, theme } from 'styles';
 
 export const FooterStyled = styled.footer`
   background-color: ${theme.colors.grayLighter};
-
   padding: 40px 20px;
+
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
-    padding: 60px 40px;
+    padding: 50px 40px;
     justify-content: space-between;
   }
 `;
@@ -17,6 +17,7 @@ export const FooterContainer = styled(MainContainer)`
   justify-content: center;
   align-items: center;
   row-gap: 40px;
+
   @media screen and (min-width: ${theme.breakpoints.tablet}) {
     flex-direction: row;
     justify-content: space-between;
