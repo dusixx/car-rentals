@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { MainContainer, theme } from 'styles';
 
 export const FooterStyled = styled.footer`
+  border-top: 1px solid #d4d4d4;
   background-color: ${theme.colors.grayLighter};
   padding: 40px 20px;
 
