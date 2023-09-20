@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { ButtonBase, Transition, DisabledStyles, theme } from '../../styles';
+import { ButtonBase, Transition, DisabledStyles, theme } from '../../../styles';
 
 const { colors } = theme;
 

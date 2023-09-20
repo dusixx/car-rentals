@@ -1,16 +1,17 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Header } from '../Header/Header';
-import { LoaderBar } from 'components/LoaderBar/LoaderBar';
+import { LoaderBar } from 'components/misc/LoaderBar/LoaderBar';
+import { Backtop } from 'components/misc/Backtop/Backtop';
+import { ScrollToTop } from 'components/misc/ScrollToTop/ScrollToTop';
+import { Footer } from 'components/Footer/Footer';
+
 import {
   MainContainer,
   Section,
   MainSection,
   RootContainer,
 } from '../../styles';
-import { Backtop } from 'components/Backtop/Backtop';
-import { ScrollToTop } from 'components/ScrollToTop/ScrollToTop';
-import { Footer } from 'components/Footer/Footer';
 
 export const SharedLayout = () => (
   <>

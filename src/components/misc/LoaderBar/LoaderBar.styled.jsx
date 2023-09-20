@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from 'styles';
-import { calcCSSValue } from '../../helpers';
+import { calcCSSValue } from '../../../helpers';
 
 const { colors } = theme;
 

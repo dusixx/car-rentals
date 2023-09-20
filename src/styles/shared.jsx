@@ -90,10 +90,10 @@ export const MainContainer = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 60px 20px;
+  padding: 70px 20px;
 
   @media screen and (min-width: ${tablet}) {
-    padding: 100px 40px;
+    padding: 110px 40px;
   }
 `;
 
