@@ -85,4 +85,6 @@ Modal.propTypes = {
   onClose: func,
   bodyScrollLock: bool,
   visible: bool,
+  portal: string,
+  modalContainer: bool,
 };
