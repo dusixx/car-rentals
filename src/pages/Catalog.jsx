@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { CarList } from '../components/CarList/CarList';
-import { useFetchCars } from '../components/hooks/useFetchCars';
+import { useFetchCars } from '../hooks/useFetchCars';
 import { Filters } from '../components/Filters/Filters';
 import { isEmptyFilter } from '../helpers';
 import { PageTitle, NoItemsFound } from '../styles';

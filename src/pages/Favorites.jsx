@@ -2,7 +2,7 @@
 import { toast } from 'react-toastify';
 import { CarList } from '../components/CarList/CarList';
 import { PageTitle, NoItemsFound } from '../styles';
-import { useFetchCars } from '../components/hooks/useFetchCars';
+import { useFetchCars } from '../hooks/useFetchCars';
 import { LoadMoreBtn } from 'components/LoadMoreBtn/LoadMoreBtn';
 
 const Favorites = () => {

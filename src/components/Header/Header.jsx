@@ -3,7 +3,7 @@ import { IoIosMenu as IconMenu } from 'react-icons/io';
 import { AiOutlineClose as IconClose } from 'react-icons/ai';
 import { NavMenu } from './NavMenu/NavMenu';
 import { Modal } from 'components/misc/Modal/Modal';
-import { useHideOnScrollDown } from 'components/hooks';
+import { useHideOnScrollDown } from 'hooks';
 import { Logo } from 'components/Logo/Logo';
 import { theme } from 'styles';
 
