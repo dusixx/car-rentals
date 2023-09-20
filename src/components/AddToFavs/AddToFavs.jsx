@@ -5,7 +5,7 @@ import { ReactComponent as IconHeartFilled } from '../../images/heart-filled.svg
 
 export const AddToFavs = ({ value, onClick }) => {
   return (
-    <AddToFavsBtn onClick={onClick}>
+    <AddToFavsBtn onClick={onClick} aria-label="Add to favorites">
       {value ? <IconHeartFilled fill="#ffa537" /> : <IconHeartOutline />}
     </AddToFavsBtn>
   );

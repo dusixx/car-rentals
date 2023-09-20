@@ -19,6 +19,7 @@ export const Socials = ({ style }) => {
               rel="noreferrer noopener nofollow"
               target="_blank"
               title={url}
+              aria-label={`${label[i]} link`}
             >
               <Icon size={35} />
             </Link>

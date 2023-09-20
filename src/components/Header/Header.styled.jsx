@@ -85,7 +85,6 @@ export const Menu = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
   padding-top: 50px;
 `;
 
