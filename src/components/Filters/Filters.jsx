@@ -6,6 +6,7 @@ import { Form, Field, Label, Group, SearchBtn } from './Filters.styled';
 import { brands } from 'data/brands';
 import { TextField } from '../misc/TextField/TextField';
 import { BiSearch as IconSearch } from 'react-icons/bi';
+import { isEmptyFilter } from 'helpers';
 
 export const Filters = ({ onSubmit = Function.prototype }) => {
   const [data, setData] = useState({
@@ -103,10 +104,7 @@ export const Filters = ({ onSubmit = Function.prototype }) => {
           />
         </Group>
       </Field>
-      <SearchBtn
-        type="submit"
-        disabled={!(brand || price || mileageFrom || mileageTo)}
-      >
+      <SearchBtn type="submit" disabled={isEmptyFilter(data)}>
         <IconSearch size={25} />
       </SearchBtn>
     </Form>
