@@ -4,6 +4,7 @@ import { CarCaption } from '../CarCard/CarCaption';
 import { DataList } from '../DataList/DataList';
 import { LabeledValue } from './LabeledValue';
 import { splitNumIntoTriads } from '../../helpers';
+import { func, bool } from 'prop-types';
 
 import {
   CloseBtn,
@@ -46,7 +47,7 @@ export const CarDetailsModal = ({ onClose, visible, ...props }) => {
   ];
 
   return (
-    <Modal visible={visible} onClose={onClose}>
+    <Modal visible={visible} onClose={onClose} bgColor="rgb(0 0 0 / 0.6)">
       <CloseBtn onClick={onClose}>&times;</CloseBtn>
       <Card>
         <Block>
@@ -91,4 +92,9 @@ export const CarDetailsModal = ({ onClose, visible, ...props }) => {
       </Card>
     </Modal>
   );
+};
+
+CarDetailsModal.propTypes = {
+  onClose: func,
+  visible: bool,
 };

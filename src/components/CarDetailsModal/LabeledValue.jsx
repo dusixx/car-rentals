@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { Item } from './LabeledValue.styled';
+import { string } from 'prop-types';
 
 export const LabeledValue = ({ text, splitter = ':' }) => {
   if (!text) return null;
@@ -16,4 +16,9 @@ export const LabeledValue = ({ text, splitter = ':' }) => {
       )}
     </Item>
   );
+};
+
+LabeledValue.propTypes = {
+  text: string,
+  splitter: string,
 };

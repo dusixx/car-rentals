@@ -7,10 +7,11 @@ import ReactDOM from 'react-dom/client';
 import { App } from './components/App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     <ThemeProvider theme={theme}>
       <Global styles={globalStyles} />
-      <BrowserRouter basename="/car-rentals/">
+      <BrowserRouter basename="/car-rentals">
         <App />
       </BrowserRouter>
     </ThemeProvider>
@@ -24,5 +25,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         backgroundColor: `whitesmoke`,
       }}
     />
-  </React.StrictMode>
+  </>
+  // </React.StrictMode>
 );

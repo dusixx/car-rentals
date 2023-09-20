@@ -31,7 +31,7 @@ export const Filters = ({ onSubmit }) => {
   };
 
   const handlePriceChange = val => {
-    const price = parseInt(val?.label) || '';
+    const price = val?.label || '';
     setData({ ...data, price });
     if (!val) onSubmit({ ...data, price: '' });
   };

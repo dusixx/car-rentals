@@ -20,16 +20,13 @@ const transitionStyles = {
   entered: { opacity: 1 },
 };
 
-//
-// Modal
-//
-
 export const Modal = ({
   children,
   bgColor,
   onClose,
   bodyScrollLock = true,
   visible,
+  modalContainer = true,
 }) => {
   const backdropRef = useRef(null);
   const containerRef = useRef(null);
@@ -70,9 +67,13 @@ export const Modal = ({
           }}
         >
           {bodyScrollLock && <BodyScrollLock />}
-          <Container ref={containerRef} offsetHeight={containerHeight}>
-            {children}
-          </Container>
+          {modalContainer ? (
+            <Container ref={containerRef} offsetHeight={containerHeight}>
+              {children}
+            </Container>
+          ) : (
+            <>{children}</>
+          )}
         </Backdrop>
       )}
     </Transition>,

@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { BeatLoader } from 'react-spinners';
 import { toast } from 'react-toastify';
 import { CarList } from '../components/CarList/CarList';
-import { PageTitle, NoItemsFound, ButtonSecondary, theme } from '../styles';
-import { useFetchCars } from './useFetchCars';
+import { PageTitle, NoItemsFound } from '../styles';
+import { useFetchCars } from '../components/hooks/useFetchCars';
+import { LoadMoreBtn } from 'components/LoadMoreBtn/LoadMoreBtn';
 
 const Favorites = () => {
   const { cars, setCars, setPage, isLoading, noMoreItems, error, setError } =
@@ -25,18 +25,14 @@ const Favorites = () => {
       <CarList
         items={cars}
         onAddToFavsClick={id =>
-          // удаляем при снятии флажка
           setCars(cur => cur.filter(itm => itm.id !== id))
         }
       />
       {!noMoreItems && (
-        <ButtonSecondary onClick={() => setPage(cur => cur + 1)}>
-          {isLoading ? (
-            <BeatLoader size={10} color={theme.colors.blue} />
-          ) : (
-            'Load more'
-          )}
-        </ButtonSecondary>
+        <LoadMoreBtn
+          onClick={() => setPage(cur => cur + 1)}
+          isLoading={isLoading}
+        />
       )}
     </>
   );

@@ -25,7 +25,7 @@ export const globalStyles = css`
     font-size: ${theme.font.size};
     color: ${theme.colors.textMain};
     background-color: ${theme.colors.bgMain};
-    overflow: scroll;
+    /* overflow: scroll; */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

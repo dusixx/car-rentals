@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { BeatLoader } from 'react-spinners';
 import { toast } from 'react-toastify';
 import { CarList } from '../components/CarList/CarList';
-import { useFetchCars } from './useFetchCars';
+import { useFetchCars } from '../components/hooks/useFetchCars';
 import { Filters } from '../components/Filters/Filters';
 import { isEmptyFilter } from '../helpers';
-import { PageTitle, NoItemsFound, ButtonSecondary, theme } from '../styles';
+import { PageTitle, NoItemsFound } from '../styles';
+import { LoadMoreBtn } from 'components/LoadMoreBtn/LoadMoreBtn';
 
 const Catalog = () => {
   const [localFilter, setLocalFilter] = useState(null);
@@ -52,13 +52,10 @@ const Catalog = () => {
 
       <CarList items={filtered} />
       {!localFilter && !noMoreItems && (
-        <ButtonSecondary onClick={() => setPage(cur => cur + 1)}>
-          {isLoading ? (
-            <BeatLoader size={10} color={theme.colors.blue} />
-          ) : (
-            'Load more'
-          )}
-        </ButtonSecondary>
+        <LoadMoreBtn
+          onClick={() => setPage(cur => cur + 1)}
+          isLoading={isLoading}
+        />
       )}
     </>
   );

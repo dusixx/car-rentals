@@ -4,7 +4,9 @@ import { DataList } from '../DataList/DataList';
 import { CarCaption } from './CarCaption';
 import { AddToFavs } from '../AddToFavs/AddToFavs';
 import { splitNumIntoTriads } from '../../helpers';
+import { func, bool } from 'prop-types';
 import * as api from '../../api';
+
 import {
   Card,
   Thumb,
@@ -79,4 +81,10 @@ export const CarCard = ({
       <LearnMoreBtn onClick={onDetailsClick}>Learn more</LearnMoreBtn>
     </Card>
   );
+};
+
+CarCard.propTypes = {
+  onDetailsClick: func,
+  onAddToFavsClick: func,
+  favorite: bool,
 };

@@ -68,11 +68,25 @@ export const ButtonSecondary = styled(ButtonBase)`
 export const PageTitle = styled.h2`
   text-align: center;
   text-transform: capitalize;
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 60px;
 `;
 
 export const NoItemsFound = styled.p`
   font-size: 16px;
   text-align: center;
+`;
+
+export const MainContainer = styled.div`
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 0 auto;
+`;
+
+export const Section = styled.section`
+  padding: 60px 20px;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+    padding: 100px 40px;
+  }
 `;
