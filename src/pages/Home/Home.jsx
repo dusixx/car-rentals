@@ -16,7 +16,7 @@ const Home = () => {
           <Title>Find the best rental prices</Title>
           <Desc>
             on luxury, economy, and family rental cars with <span>FREE</span>{' '}
-            amendments in <span>over 60000</span> locations worldwide
+            amendments in <span>over 60,000</span> locations worldwide
           </Desc>
           <Link to="/catalog">
             <GetStartedBtn>Choose a car</GetStartedBtn>
