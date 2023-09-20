@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Modal } from '../misc/Modal/Modal';
 import { CarCaption } from '../CarCard/CarCaption';
 import { DataList } from '../DataList/DataList';

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { DataList } from '../DataList/DataList';
 import { CarCaption } from './CarCaption';

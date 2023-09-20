@@ -14,8 +14,6 @@ export const fetchAllCars = async (page, filter) => {
     `cars?page=${page}&limit=${PER_PAGE}${str ? `&${str}` : ``}`
   );
 
-  console.log(url);
-
   const { data } = await axios.get(url);
 
   return data;

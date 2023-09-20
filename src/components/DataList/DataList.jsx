@@ -1,5 +1,5 @@
 import { ListPrimary, ListSecondary } from './DataList.styled';
-import { arrayOf, number, object } from 'prop-types';
+import { array, number } from 'prop-types';
 
 export const DataList = ({ items, listType = 1, ...props }) => {
   const List = listType === 1 ? ListPrimary : ListSecondary;
@@ -12,6 +12,6 @@ export const DataList = ({ items, listType = 1, ...props }) => {
 };
 
 DataList.propTypes = {
-  items: arrayOf(object),
+  items: array,
   listType: number,
 };

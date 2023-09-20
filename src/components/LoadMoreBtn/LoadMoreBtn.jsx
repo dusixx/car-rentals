@@ -1,5 +1,6 @@
 import { BeatLoader } from 'react-spinners';
 import { ButtonSecondary, theme } from 'styles';
+import { bool, func, string } from 'prop-types';
 
 export const LoadMoreBtn = ({ isLoading, onClick, caption = 'Load more' }) => {
   return (
@@ -11,4 +12,10 @@ export const LoadMoreBtn = ({ isLoading, onClick, caption = 'Load more' }) => {
       )}
     </ButtonSecondary>
   );
+};
+
+LoadMoreBtn.propTypes = {
+  isLoading: bool,
+  onClick: func,
+  caption: string,
 };

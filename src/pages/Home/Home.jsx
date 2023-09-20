@@ -19,7 +19,7 @@ const Home = () => {
             amendments in <span>over 60000</span> locations worldwide
           </Desc>
           <Link to="/catalog">
-            <GetStartedBtn>Find a Car</GetStartedBtn>
+            <GetStartedBtn>Choose a car</GetStartedBtn>
           </Link>
         </About>
       </Banner>
