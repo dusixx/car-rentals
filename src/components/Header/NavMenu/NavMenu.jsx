@@ -18,7 +18,9 @@ export const NavMenu = ({ onItemClick = Function.prototype }) => {
         <NavLinkStyled
           key={name}
           to={url}
-          onClick={() => onItemClick(name, url)}
+          onClick={() => {
+            onItemClick(name, url);
+          }}
         >
           {name}
         </NavLinkStyled>
