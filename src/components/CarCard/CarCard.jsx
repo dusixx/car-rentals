@@ -44,13 +44,18 @@ export const CarCard = ({
   const alt = `${make} ${model}`;
 
   const handleAddToFavsClick = () => {
+    // для лучшего UX ставим сразу без задержки бекенда,
+    // а в случае ошибки - снимаем (*)
+    setIsFavorite(cur => !cur);
     api
       .updateFavoriteById(id, !isFavorite)
       .then(() => {
-        setIsFavorite(cur => !cur);
         onAddToFavsClick(!isFavorite);
       })
-      .catch(err => toast.error(err.message));
+      .catch(err => {
+        setIsFavorite(cur => !cur); // (*)
+        toast.error(err.message);
+      });
   };
 
   return (
