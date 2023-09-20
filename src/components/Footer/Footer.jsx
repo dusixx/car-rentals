@@ -1,6 +1,5 @@
-import { FooterStyled } from './Footer.styled';
 import { Socials } from 'components/Socials/Socials';
-import { FooterContainer, Copyright } from './Footer.styled';
+import { FooterStyled, FooterContainer, Copyright } from './Footer.styled';
 
 export const Footer = () => {
   return (

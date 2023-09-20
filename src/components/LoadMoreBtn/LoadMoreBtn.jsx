@@ -1,5 +1,5 @@
-import { BeatLoader } from 'react-spinners';
 import { bool, func, string } from 'prop-types';
+import { BeatLoader } from 'react-spinners';
 import { ButtonSecondary, theme } from 'styles';
 
 export const LoadMoreBtn = ({ isLoading, onClick, caption = 'Load more' }) => {

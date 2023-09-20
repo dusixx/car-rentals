@@ -1,5 +1,5 @@
-import { Item } from './LabeledValue.styled';
 import { string } from 'prop-types';
+import { Item } from './LabeledValue.styled';
 
 export const LabeledValue = ({ text, splitter = ':' }) => {
   if (!text) return null;

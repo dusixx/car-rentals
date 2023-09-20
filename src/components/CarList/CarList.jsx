@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import { func, arrayOf, object } from 'prop-types';
 import { CarCard } from '../CarCard/CarCard';
 import { List, ListItem } from './CarList.styled';
 import { CarDetailsModal } from '../CarDetailsModal/CarDetailsModal';
-import { useState } from 'react';
 
 export const CarList = ({ items, onAddToFavsClick = Function.prototype }) => {
   const [showModal, setShowModal] = useState(false);

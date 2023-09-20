@@ -1,5 +1,5 @@
-import { Caption } from './CarCard.styled';
 import { oneOfType, number, string } from 'prop-types';
+import { Caption } from '../CarCard.styled';
 
 export const CarCaption = ({ make, model, year, ...props }) => {
   return (

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
-import { VscClose as IconClose } from 'react-icons/vsc';
 import { func, string, number, oneOfType, object } from 'prop-types';
+import { VscClose as IconClose } from 'react-icons/vsc';
 import { ClearBtn, InputWrapper, Input, Field } from './TextField.styled';
 
 export const TextField = forwardRef(

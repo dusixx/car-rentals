@@ -1,12 +1,12 @@
 import Select from 'react-select';
 import { useState } from 'react';
 import { func } from 'prop-types';
+import { BiSearch as IconSearch } from 'react-icons/bi';
 import { stylesBrand, stylesPrice, components } from './selectStyles';
 import { Form, Field, Label, Group, SearchBtn } from './Filters.styled';
-import { brands } from 'data/brands';
 import { TextField } from '../misc/TextField/TextField';
-import { BiSearch as IconSearch } from 'react-icons/bi';
 import { isEmptyFilter } from 'helpers';
+import { brands } from 'data/brands';
 
 export const Filters = ({ onSubmit = Function.prototype }) => {
   const [data, setData] = useState({

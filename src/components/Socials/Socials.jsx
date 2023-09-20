@@ -1,8 +1,8 @@
 import { object } from 'prop-types';
-import { List, Link } from './Socials.styled';
 import { AiFillInstagram as IconInsta } from 'react-icons/ai';
 import { RiYoutubeFill as IconYoutube } from 'react-icons/ri';
 import { BiLogoFacebookCircle as IconFacebook } from 'react-icons/bi';
+import { List, Link } from './Socials.styled';
 
 const service = [IconInsta, IconYoutube, IconFacebook];
 const label = ['instagram', 'youtube', 'facebook'];

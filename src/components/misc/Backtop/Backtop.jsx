@@ -1,8 +1,8 @@
-import { BacktopBtn } from './Backtop.styled';
+import { string, number } from 'prop-types';
 import { useEffect, useState } from 'react';
 import throttle from 'lodash.throttle';
 import { IoIosArrowUp as IconArrowUp } from 'react-icons/io';
-import { string, number } from 'prop-types';
+import { BacktopBtn } from './Backtop.styled';
 
 const THROTTLE_DELAY = 500;
 const BTN_TITLE = 'Go to Top';

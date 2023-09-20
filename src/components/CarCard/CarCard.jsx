@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { DataList } from '../DataList/DataList';
-import { CarCaption } from './CarCaption';
-import { AddToFavs } from '../AddToFavs/AddToFavs';
-import { splitNumIntoTriads } from 'helpers';
 import { func, bool } from 'prop-types';
 import { toast } from 'react-toastify';
+import { splitNumIntoTriads } from 'helpers';
 import * as api from 'api';
+import { DataList } from '../DataList/DataList';
+import { CarCaption } from './CarCaption/CarCaption';
+import { AddToFavs } from '../AddToFavs/AddToFavs';
 
 import {
   Card,

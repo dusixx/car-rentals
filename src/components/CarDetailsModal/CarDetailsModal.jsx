@@ -1,9 +1,9 @@
+import { func, bool } from 'prop-types';
 import { Modal } from '../misc/Modal/Modal';
-import { CarCaption } from '../CarCard/CarCaption';
+import { CarCaption } from '../CarCard/CarCaption/CarCaption';
 import { DataList } from '../DataList/DataList';
 import { LabeledValue } from './LabeledValue/LabeledValue';
 import { splitNumIntoTriads } from 'helpers';
-import { func, bool } from 'prop-types';
 
 import {
   CloseBtn,

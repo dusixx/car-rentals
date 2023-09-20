@@ -1,11 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { IoIosMenu as IconMenu } from 'react-icons/io';
 import { AiOutlineClose as IconClose } from 'react-icons/ai';
+import { theme } from 'styles';
+import { useHideOnScrollDown } from 'hooks';
 import { NavMenu } from './NavMenu/NavMenu';
 import { Modal } from 'components/misc/Modal/Modal';
-import { useHideOnScrollDown } from 'hooks';
 import { Logo } from 'components/Logo/Logo';
-import { theme } from 'styles';
 
 import {
   PageHeader,
