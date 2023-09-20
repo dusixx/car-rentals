@@ -16,8 +16,7 @@ const shaded = css`
 
   & > div {
     @media screen and (max-width: ${parseInt(tablet) - 0.1}px) {
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding: 7px 0;
     }
   }
 
@@ -28,6 +27,7 @@ const shaded = css`
   }
 
   & a:not([data-logo]) {
+    font-size: 15px;
     @media screen and (min-width: ${tablet}) {
       padding: 15px 0;
     }
@@ -61,7 +61,7 @@ export const HeaderContainer = styled(MainContainer)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
 
   @media screen and (min-width: ${tablet}) {
     padding: 0;

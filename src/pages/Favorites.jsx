@@ -18,9 +18,7 @@ const Favorites = () => {
     <>
       <PageTitle>Favorites</PageTitle>
 
-      {!isLoading && !cars.length && (
-        <NoItemsFound>No items found</NoItemsFound>
-      )}
+      {!isLoading && !cars.length && <NoItemsFound>No cars found</NoItemsFound>}
 
       <CarList
         items={cars}

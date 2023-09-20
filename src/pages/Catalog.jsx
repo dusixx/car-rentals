@@ -47,7 +47,7 @@ const Catalog = () => {
       <Filters onSubmit={handleFilterSubmit} />
 
       {!isLoading && !filtered.length && (
-        <NoItemsFound>No items found</NoItemsFound>
+        <NoItemsFound>No cars found</NoItemsFound>
       )}
 
       <CarList items={filtered} />

@@ -1,12 +1,8 @@
-const toStr = Object.prototype.toString;
-
 export const isStr = v => typeof v === 'string';
 export const isNum = v => !isNaN(v - parseFloat(v));
-export const isDef = v => typeof v !== 'undefined';
-export const isFunc = v => typeof v === 'function';
 export const isInt = v => Number.isInteger(v);
-export const isObj = v => toStr.call(v) === '[object Object]';
-export const isArray = v => Array.isArray(v);
+
+export const calcCSSValue = v => (isNum(v) ? `${v}px` : v);
 
 export const isVScrollBarVisible = () => {
   const { body } = document;
@@ -38,8 +34,6 @@ export const splitNumIntoTriads = (v, splitter = ' ') => {
 export const isEmptyFilter = data => {
   return !Object.values(data).some(v => v !== '');
 };
-
-export const calcCSSValue = v => (isNum(v) ? `${v}px` : v);
 
 export const isModalOpen = (modalRootSelector = '#root-modal') => {
   const rootModal = document.querySelector(modalRootSelector);

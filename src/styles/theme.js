@@ -12,7 +12,7 @@ export const theme = {
     blueDarker: '#0b44cd',
     blue50: blue[50],
     blue100: blue[100],
-    textMain: '#121417',
+    textMain: '#242424',
     textButton: 'whitesmoke',
     bgMain: 'white',
     bgButton: '#3470ff',

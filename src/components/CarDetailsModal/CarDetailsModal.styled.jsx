@@ -38,7 +38,7 @@ export const Card = styled.article`
 
   @media screen and (min-width: ${tablet}) {
     width: 50vw;
-    padding: 38px;
+    padding: 32px;
   }
 
   @media screen and (min-width: ${desktop}) {

@@ -6,8 +6,6 @@ import { BodyScrollLock } from '../BodyScrollLock/BodyScrollLock';
 import { Transition } from 'react-transition-group';
 import { theme } from '../../styles';
 
-const rootModal = document.querySelector('#root-modal');
-
 const defaultStyle = {
   transitionProperty: 'opacity',
   transitionDuration: theme.transition.duration,
@@ -26,6 +24,7 @@ export const Modal = ({
   onClose,
   bodyScrollLock = true,
   visible,
+  portal = '#root-modal',
   modalContainer = true,
 }) => {
   const backdropRef = useRef(null);
@@ -77,7 +76,7 @@ export const Modal = ({
         </Backdrop>
       )}
     </Transition>,
-    rootModal
+    document.querySelector(portal)
   );
 };
 

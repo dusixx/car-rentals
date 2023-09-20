@@ -2,11 +2,17 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import { theme } from './theme';
 
+const {
+  colors,
+  transition,
+  breakpoints: { tablet },
+} = theme;
+
 export const Transition = (...props) => {
   return css`
     transition-property: ${props.join(',')};
-    transition-duration: ${theme.transition.duration};
-    transition-timing-function: ${theme.transition.func};
+    transition-duration: ${transition.duration};
+    transition-timing-function: ${transition.func};
   `;
 };
 
@@ -36,14 +42,14 @@ export const ButtonPrimary = styled(ButtonBase)`
   font-weight: 600;
   line-height: 1.4;
 
-  color: ${theme.colors.textButton};
-  background-color: ${theme.colors.bgButton};
+  color: ${colors.textButton};
+  background-color: ${colors.bgButton};
 
   ${Transition('background-color')};
 
   &:hover,
   &:focus-visible {
-    background-color: ${theme.colors.bgButtonHover};
+    background-color: ${colors.bgButtonHover};
   }
 `;
 
@@ -53,14 +59,14 @@ export const ButtonSecondary = styled(ButtonBase)`
   line-height: 1.5;
   text-decoration-line: underline;
 
-  color: ${theme.colors.bgButton};
+  color: ${colors.bgButton};
   background-color: transparent;
 
   ${Transition('color', 'background-color')};
 
   &:hover,
   &:focus-visible {
-    color: ${theme.colors.bgButtonHover};
+    color: ${colors.bgButtonHover};
     background-color: #ececec;
   }
 `;
@@ -86,7 +92,16 @@ export const MainContainer = styled.div`
 export const Section = styled.section`
   padding: 60px 20px;
 
-  @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+  @media screen and (min-width: ${tablet}) {
     padding: 100px 40px;
   }
+`;
+
+export const MainSection = styled.main``;
+
+export const RootContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 `;

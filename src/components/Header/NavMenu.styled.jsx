@@ -46,7 +46,7 @@ export const NavLinkStyled = styled(NavLink)`
   text-transform: capitalize;
 
   @media screen and (min-width: ${tablet}) {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   ${Transition('color')};

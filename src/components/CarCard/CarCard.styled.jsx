@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { ButtonPrimary } from '../../styles/shared';
+import noImage from '../../images/noimage.png';
 
 export const Card = styled.article`
   display: flex;
@@ -17,7 +18,7 @@ export const Thumb = styled.div`
   border-radius: 14px;
   overflow: hidden;
 
-  background: #e6e6e6 url('/noimage.png');
+  background: #e6e6e6 ${`url(${noImage})`};
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
