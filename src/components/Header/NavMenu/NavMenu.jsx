@@ -1,5 +1,5 @@
-import { Nav, NavLinkStyled } from './NavMenu.styled';
 import { func } from 'prop-types';
+import { Nav, NavLinkStyled } from './NavMenu.styled';
 
 const items = {
   home: '/',
@@ -7,8 +7,10 @@ const items = {
   favorites: '/favorites',
 };
 
-// !! если не указать дефолтное для onItemClick -
-// перерисовывает меню на каждый клик
+// Если не указать дефолтное и не передать onItemsClick -
+// будет постоянная перерисовка. Как вариант сделать
+// const ref = useRef(onItemClick);
+// onClick={() => ref.current?.(name, url)}
 export const NavMenu = ({ onItemClick = Function.prototype }) => {
   return (
     <Nav>

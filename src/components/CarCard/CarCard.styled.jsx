@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { ButtonPrimary } from '../../styles/shared';
-import noImage from '../../images/noimage.png';
+import { ButtonPrimary } from 'styles';
+import noImage from 'images/noimage.png';
 
 export const Card = styled.article`
   display: flex;

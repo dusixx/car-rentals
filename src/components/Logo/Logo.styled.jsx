@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from '../../styles';
-// import { Link } from 'react-router-dom';
+import { theme } from 'styles';
 
 export const LogoWrapper = styled.a`
   display: flex;

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { theme, ButtonBase, Transition } from '../../styles';
-import { MainContainer } from '../../styles';
 import { css } from '@emotion/react';
+import { theme, ButtonBase, Transition, MainContainer } from 'styles';
 
 const visibility = visible => (visible ? 'none' : 'translate(0, -100%)');
 

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Thumb, Photo } from '../CarCard/CarCard.styled';
-import { ButtonPrimary, ButtonBase, Transition, theme } from '../../styles';
+import { ButtonPrimary, ButtonBase, Transition, theme } from 'styles';
 
 const { tablet, desktop } = theme.breakpoints;
 

@@ -1,9 +1,14 @@
-import { theme } from '../../styles';
+import { theme } from 'styles';
 
-const { colors, transition, breakpoints } = theme;
+const {
+  colors,
+  transition,
+  breakpoints: { tablet, desktop },
+} = theme;
+
 const mq = {
-  tablet: `@media screen and (min-width: ${breakpoints.tablet})`,
-  desktop: `@media screen and (min-width: ${breakpoints.desktop})`,
+  tablet: `@media screen and (min-width: ${tablet})`,
+  desktop: `@media screen and (min-width: ${desktop})`,
 };
 
 export const components = {

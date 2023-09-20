@@ -2,7 +2,7 @@ import { Modal } from '../misc/Modal/Modal';
 import { CarCaption } from '../CarCard/CarCaption';
 import { DataList } from '../DataList/DataList';
 import { LabeledValue } from './LabeledValue/LabeledValue';
-import { splitNumIntoTriads } from '../../helpers';
+import { splitNumIntoTriads } from 'helpers';
 import { func, bool } from 'prop-types';
 
 import {

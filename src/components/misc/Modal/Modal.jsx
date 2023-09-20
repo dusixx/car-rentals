@@ -4,7 +4,7 @@ import { func, string, bool } from 'prop-types';
 import { Backdrop, Container } from './Modal.styled';
 import { BodyScrollLock } from '../BodyScrollLock/BodyScrollLock';
 import { Transition } from 'react-transition-group';
-import { theme } from '../../../styles';
+import { theme } from 'styles';
 
 const defaultStyle = {
   transitionProperty: 'opacity',

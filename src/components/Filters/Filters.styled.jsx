@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { ButtonPrimary, theme } from '../../styles';
+import { ButtonPrimary, theme } from 'styles';
 
 export const Form = styled.form`
   width: 100%;

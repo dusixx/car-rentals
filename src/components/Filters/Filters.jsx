@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import Select from 'react-select';
+import { useState } from 'react';
 import { func } from 'prop-types';
 import { stylesBrand, stylesPrice, components } from './selectStyles';
 import { Form, Field, Label, Group, SearchBtn } from './Filters.styled';
-import { brands } from '../../data/brands';
+import { brands } from 'data/brands';
 import { TextField } from '../misc/TextField/TextField';
 import { BiSearch as IconSearch } from 'react-icons/bi';
 
-export const Filters = ({ onSubmit }) => {
+export const Filters = ({ onSubmit = Function.prototype }) => {
   const [data, setData] = useState({
     brand: '',
     price: '',

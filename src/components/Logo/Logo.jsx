@@ -1,6 +1,6 @@
+import { func, object } from 'prop-types';
 import logo from 'images/logo.png';
 import { LogoWrapper } from './Logo.styled';
-import { func, object } from 'prop-types';
 
 export const Logo = ({ onClick, style }) => {
   return (

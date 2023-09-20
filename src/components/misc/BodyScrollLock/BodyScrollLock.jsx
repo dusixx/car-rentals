@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { isVScrollBarVisible } from '../../../helpers';
+import { isVScrollBarVisible } from 'helpers';
 
 export const BodyScrollLock = () => {
   useEffect(() => {

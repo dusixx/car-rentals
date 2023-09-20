@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { ButtonBase, Transition } from 'styles/shared';
-import { calcCSSValue } from '../../../helpers';
+import { ButtonBase, Transition } from 'styles';
+import { calcCSSValue } from 'helpers';
 
 const DEF_OFFSET = 15;
 const DEF_SIZE = 50;

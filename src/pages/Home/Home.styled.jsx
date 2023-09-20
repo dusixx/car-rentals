@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import banner from '../../images/home-bg.jpg';
+import banner from 'images/home-bg.jpg';
 import { ButtonPrimary, theme } from 'styles';
 
 const { breakpoints: bp } = theme;
