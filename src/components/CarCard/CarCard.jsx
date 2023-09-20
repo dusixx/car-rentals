@@ -4,6 +4,7 @@ import { CarCaption } from './CarCaption';
 import { AddToFavs } from '../AddToFavs/AddToFavs';
 import { splitNumIntoTriads } from 'helpers';
 import { func, bool } from 'prop-types';
+import { toast } from 'react-toastify';
 import * as api from 'api';
 
 import {
@@ -43,9 +44,13 @@ export const CarCard = ({
   const alt = `${make} ${model}`;
 
   const handleAddToFavsClick = () => {
-    setIsFavorite(cur => !cur);
-    api.updateFavoriteById(id, !isFavorite);
-    onAddToFavsClick(!isFavorite);
+    api
+      .updateFavoriteById(id, !isFavorite)
+      .then(() => {
+        setIsFavorite(cur => !cur);
+        onAddToFavsClick(!isFavorite);
+      })
+      .catch(err => toast.error(err.message));
   };
 
   return (
