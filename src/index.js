@@ -8,21 +8,23 @@ import { App } from './components/App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Global styles={globalStyles} />
-      <BrowserRouter basename="/car-rentals">
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <Global styles={globalStyles} />
+        <BrowserRouter basename="/car-rentals">
+          <App />
+        </BrowserRouter>
+      </ThemeProvider>
 
-    <ToastContainer
-      autoClose={2000}
-      position="top-center"
-      progressStyle={{ height: '1px' }}
-      hideProgressBar={true}
-      toastStyle={{
-        backgroundColor: `whitesmoke`,
-      }}
-    />
+      <ToastContainer
+        autoClose={2000}
+        position="top-center"
+        progressStyle={{ height: '1px' }}
+        hideProgressBar={true}
+        toastStyle={{
+          backgroundColor: `whitesmoke`,
+        }}
+      />
+    </>
   </React.StrictMode>
 );

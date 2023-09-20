@@ -51,7 +51,7 @@ export const Filters = ({ onSubmit }) => {
   const brandOptions = brands.map(itm => ({ label: itm }));
   const priceOptions = Array.from({ length: 100 }).map((_, idx) => {
     return {
-      label: `${(idx + 1) * 10}$`,
+      label: `$${(idx + 1) * 10}`,
     };
   });
 

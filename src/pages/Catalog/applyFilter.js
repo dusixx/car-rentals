@@ -7,7 +7,7 @@ export const applyFilter = (cars, localFilter) => {
     const [rent] = rentalPrice.match(/\d+/);
     return (
       (brand ? make === brand : true) &&
-      rent <= (parseInt(price) || Infinity) &&
+      rent <= (parseInt(price?.slice(1)) || Infinity) &&
       mileage >= (parseFloat(mileageFrom) || 0) &&
       mileage <= (parseFloat(mileageTo) || Infinity)
     );
